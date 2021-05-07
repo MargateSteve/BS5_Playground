@@ -4,18 +4,50 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="author" content="Steve Ball, Bootplus">
         <meta name="generator" content="Hugo 0.82.0">
         <title>BS5 Playground</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.css" rel="stylesheet">\
 
     </head>
     <body>
     
         <div class="col-lg-8 mx-auto p-3 py-md-5">
             <h1 class="text-primary">BS5 Playground</h1>
+            
+            <?php 
+            $result = false;
+            $dir ='templates';
+            while($dirs = glob($dir . '/*', GLOB_ONLYDIR)) {
+                $dir .= '/*';
+                if(!$result) {
+                    $result = $dirs;
+                } else {
+                    $result = array_merge($result, $dirs);
+                }
+            }
+            ?>
+            <h5>Templates</h5>
+            <div class="row">
+                <?php 
+                foreach ($result as $key => $value) {
+                    $parts = explode('/',$value);
+ 
+                    if($parts[1] !== 'assets') {
+                        
+                        $name = str_replace('-', ' ', $parts[1]);
+                        echo '<div class="col-sm-6 col-md-4 col-xl-3 mb-3">';
+                        echo '<h3 class="h5 mb-1"><a class="text-decoration-none" href="'.$value.'" class="text-decoration-none">'.ucwords($name).'</a>';
+                       echo '</h3></div>';
+   
+                    }
+                }
+                
+                ?>
+            </div><!-- row -->    
+            
             <?php 
             $result = false;
             $dir ='examples';

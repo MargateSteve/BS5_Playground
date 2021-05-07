@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 03-Mar-2021, 21:56:50
+    Author     : srbal
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 03-Mar-2021, 21:56:50
+    Author     : srbal
+*/
+/* line 14, W:/Projects/Templates/FrontEnd/assets/scss/front_end.scss */
+body {
+  background-color: #0a3622;
+}
+
+/* line 18, W:/Projects/Templates/FrontEnd/assets/scss/front_end.scss */
+#header {
+  background-color: #0f5132;
+}
+
+/* line 22, W:/Projects/Templates/FrontEnd/assets/scss/front_end.scss */
+.icon-lg::before {
+  font-size: 3.25rem;
+}
+
+/*# sourceMappingURL=front_end.css.map */
