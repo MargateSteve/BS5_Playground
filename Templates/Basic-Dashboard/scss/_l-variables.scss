@@ -1,0 +1,19 @@
+// scss-docs-start site-colors-map
+$site-colors: (
+  "blue":    #000066,
+  "yellow":  $yellow-100,
+  "green":  green,
+  "ultra-danger": $red-700,
+) !default;
+// scss-docs-end site-colors-map
+
+$sidebar-width: 210px;
+
+$font-size-xlg:                $font-size-base * 1.5 !default;
+$font-size-xxlg:               $font-size-base * 2 !default;
+
+$on-dark-link: $gray-100;
+$on-dark-link-hover: $blue-200;
+
+$on-light-link: $gray-800;
+$on-light-link-hover: $blue-800;

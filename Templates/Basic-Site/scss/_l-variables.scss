@@ -1,0 +1,15 @@
+// scss-docs-start site-colors-map
+$site-colors: (
+  "blue":    #000066,
+  "yellow":  $yellow-100,
+  "green":  green,
+  "ultra-danger": $red-700,
+) !default;
+// scss-docs-end site-colors-map
+
+
+$font-size-xlg:                $font-size-base * 1.5 !default;
+$font-size-xxlg:               $font-size-base * 2 !default;
+
+$bg-medium: $green-700;
+$bg-dark: $green-900;

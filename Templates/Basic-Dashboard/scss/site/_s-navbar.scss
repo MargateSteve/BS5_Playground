@@ -1,0 +1,65 @@
+.navbar  {
+    .navbar-toggler {
+        top: .25rem;
+        right: 1rem;
+    }
+  
+    .left-toggle-small {
+        @include media-breakpoint-up(md) { 
+            display: none;
+        }
+    } 
+  
+    .left-toggle-large {
+        @include media-breakpoint-down(md) { 
+            display: none;
+        }
+    }
+  
+    ul.nav.collapse {
+        .nav-item {
+            display: block;
+        }
+    }
+  
+    .nav-item.dropdown , a, i{
+        color: $on-dark-link;
+        text-decoration: none;
+        &:hover {
+            color: $on-dark-link-hover;
+            cursor: pointer;
+        }
+        
+
+        .dropdown-item {
+            color: $on-light-link;
+
+            &:hover {
+                color: $on-light-link-hover;
+            }
+        }  
+
+        
+    }
+}
+
+.navbar-brand {
+  
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  
+  width: $sidebar-width;
+  
+  a , &i{
+      color: $on-dark-link;
+      text-decoration: none;
+      
+      &:hover {
+              color: $on-dark-link-hover;
+             
+          }
+  }
+  
+
+}

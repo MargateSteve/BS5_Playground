@@ -1,34 +1,49 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+    Created on : 07-May-2021, 21:34:17
+    Author     : Steve Ball
 */
-/*
-    Created on : 03-Mar-2021, 21:56:50
-    Author     : srbal
-*/
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : 03-Mar-2021, 21:56:50
-    Author     : srbal
-*/
-/* line 14, W:/Projects/Templates/FrontEnd/assets/scss/front_end.scss */
-body {
-  background-color: #0a3622;
+.bg-blue {
+  background-color: #000066 !important;
 }
 
-/* line 18, W:/Projects/Templates/FrontEnd/assets/scss/front_end.scss */
-#header {
+.bg-yellow {
+  background-color: #fff3cd !important;
+}
+
+.bg-green {
+  background-color: green !important;
+}
+
+.bg-ultra-danger {
+  background-color: #842029 !important;
+}
+
+.text-blue {
+  color: #000066 !important;
+}
+
+.text-yellow {
+  color: #fff3cd !important;
+}
+
+.text-green {
+  color: green !important;
+}
+
+.text-ultra-danger {
+  color: #842029 !important;
+}
+
+.text-orange {
+  color: #feb272 !important;
+}
+
+header {
   background-color: #0f5132;
 }
 
-/* line 22, W:/Projects/Templates/FrontEnd/assets/scss/front_end.scss */
-.icon-lg::before {
-  font-size: 3.25rem;
+body {
+  background-color: #051b11;
 }
 
-/*# sourceMappingURL=front_end.css.map */
+/*# sourceMappingURL=basic-site.css.map */

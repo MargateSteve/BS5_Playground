@@ -1,0 +1,25 @@
+/*
+    Created on : 07-May-2021, 21:34:17
+    Author     : Steve Ball
+*/
+
+@import "../../../assets/vendor/bootstrap/v5/scss/functions";
+@import "../../../assets/vendor/bootstrap/v5/scss/variables";
+@import "../../../assets/vendor/bootstrap/v5/scss/mixins";
+
+// Local 
+@import "l-variables";
+@import "l-utilities";
+
+// Use bottstrap api to process local utilities
+@import "../../../assets/vendor/bootstrap/v5/scss/utilities/api";
+
+
+
+// Below is component specific. 
+@import "site/s-header";
+@import "site/s-main";
+
+body {
+  background-color: $bg-dark;
+}

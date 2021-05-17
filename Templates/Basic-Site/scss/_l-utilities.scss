@@ -1,0 +1,18 @@
+$utilities: (
+  "background-color": (
+    property: background-color,
+    class: bg,
+    values: $site-colors
+  ),
+  "colors": (
+    property: color,
+    class: text,
+    values:  map-merge(
+        $site-colors,
+        (
+          "orange": $orange-300,
+          
+        )
+      )
+  ),
+);

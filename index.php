@@ -9,7 +9,7 @@
         <title>BS5 Playground</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet">\
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
 
     </head>
     <body>
@@ -19,27 +19,19 @@
             
             <?php 
             $result = false;
-            $dir ='templates';
-            while($dirs = glob($dir . '/*', GLOB_ONLYDIR)) {
-                $dir .= '/*';
-                if(!$result) {
-                    $result = $dirs;
-                } else {
-                    $result = array_merge($result, $dirs);
-                }
-            }
+            $dir ='templates/';
+            $result = scandir($dir, 1);
             ?>
             <h5>Templates</h5>
             <div class="row">
                 <?php 
                 foreach ($result as $key => $value) {
-                    $parts = explode('/',$value);
  
-                    if($parts[1] !== 'assets') {
+                    if(!in_array($value, ['assets', '.', '..'])){
                         
-                        $name = str_replace('-', ' ', $parts[1]);
+                        $name = str_replace('-', ' ', $value);
                         echo '<div class="col-sm-6 col-md-4 col-xl-3 mb-3">';
-                        echo '<h3 class="h5 mb-1"><a class="text-decoration-none" href="'.$value.'" class="text-decoration-none">'.ucwords($name).'</a>';
+                        echo '<h3 class="h5 mb-1"><a class="text-decoration-none" href="templates/'.$value.'" class="text-decoration-none">'.ucwords($name).'</a>';
                        echo '</h3></div>';
    
                     }

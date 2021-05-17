@@ -1,0 +1,15 @@
+//W:\Projects\BS5_Playground\assets\vendor\bootstrap\v5\scss\_buttons.scss
+// scss-docs-start btn-variant-loops
+@each $color, $value in $site-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $site-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+// scss-docs-end btn-variant-loops
+

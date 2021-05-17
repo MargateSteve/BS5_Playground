@@ -1,0 +1,19 @@
+/*
+    Custom-Css
+    Created on : 07-May-2021, 21:34:17
+    Author     : srbal
+*/
+
+@import "../../../assets/vendor/bootstrap/v5/scss/functions";
+@import "../../../assets/vendor/bootstrap/v5/scss/variables";
+@import "../../../assets/vendor/bootstrap/v5/scss/mixins";
+
+
+@import "l-variables";
+@import "l-utilities";
+
+@import "../../../assets/vendor/bootstrap/v5/scss/utilities/api";
+
+// Below is not covered by utilities api. 
+@import "l-alerts";
+@import "l-buttons";

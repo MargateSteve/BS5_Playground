@@ -1,0 +1,13 @@
+main {
+    // Could put the flex shrink here instead of in html
+    z-index: 100; 
+    background-color: $green-100;
+    
+    @include media-breakpoint-up(md) { 
+        margin-left: $sidebar-width;
+    }
+    
+    body.hide-menu-large & {
+       margin-left: 0;
+    }
+}

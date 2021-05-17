@@ -1,0 +1,40 @@
+/*
+    Created on : 07-May-2021, 21:34:17
+    Author     : Steve Ball
+*/
+
+@import "../../../assets/vendor/bootstrap/v5/scss/functions";
+@import "../../../assets/vendor/bootstrap/v5/scss/variables";
+@import "../../../assets/vendor/bootstrap/v5/scss/mixins";
+
+// Local 
+@import "l-variables";
+@import "l-utilities";
+
+// Use bottstrap api to process local utilities
+@import "../../../assets/vendor/bootstrap/v5/scss/utilities/api";
+
+// Below is not covered by utilities api. 
+@import "l-alerts";
+@import "l-buttons";
+
+
+// Below is component specific. 
+@import "site/s-navbar";
+@import "site/s-sidebars";
+@import "site/s-main";
+
+body {
+  font-size: .875rem;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+  
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+}
